@@ -1,0 +1,20 @@
+{
+  "Banks": {
+    "NonghyupInvestment": "URI/Banks/NonghyupInvestment.json",
+    "Nonghyup": "URI/Banks/Nonghyup.json",
+    "Shinhan": "URI/Banks/Shinhan.json"
+  },
+  "Tokens": {
+    "VIRTUAL": "URI/Tokens/VIRTUAL.json",
+    "USDT": "URI/Tokens/USDT.json",
+    "USDC": "URI/Tokens/USDC.json"
+  },
+  "CEX": {
+    "Bithumb": "URI/CEX/Bithumb.json",
+    "Binance": "URI/CEX/Binance.json",
+    "Korbit": "URI/CEX/Korbit.json"
+  },
+  "Wallets": {
+    "ZKAP": "URI/Wallets/ZKAP.json"
+  }
+}

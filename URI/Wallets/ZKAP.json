@@ -1,0 +1,14 @@
+{
+  "name": "ZKAP",
+  "type": "Wallet",
+  "supportedNetworks": ["Ethereum", "Base", "BSC"],
+  "swapTokens": [
+    {
+      "to": "1inch",
+      "network": "Base",
+      "symbol": "VIRTUAL",
+      "fee": 0.3,
+      "time": 1000
+    }
+  ]
+}

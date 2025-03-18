@@ -1,0 +1,8 @@
+{
+  "Name": "Tether",
+  "Symbol": "USDT",
+  "LogoURI": "https://cryptologos.cc/logos/tether-usdt-logo.png",
+  "Networks": ["Ethereum", "Tron"],
+  "CEX": ["Bithumb", "Upbit", "Binance", "Coinone"],
+  "Services": ["1inch"]
+}

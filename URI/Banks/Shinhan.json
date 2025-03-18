@@ -1,0 +1,13 @@
+{
+  "name": "Shinhan Bank",
+  "supportedCurrencies": ["KRW"],
+  "withdrawNetworks": [
+    {
+      "network": "Fiat",
+      "fee": 0,
+      "time": 1,
+      "quoteCurrency": "KRW",
+      "destination": "Korbit"
+    }
+  ]
+}

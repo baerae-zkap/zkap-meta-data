@@ -1,0 +1,50 @@
+{
+  "name": "Binance",
+  "firstWithdrawableTime": "48h",
+  "isTravelRule": false,
+  "isWhiteList": false,
+  "isLargeWithdraw": false,
+  "tokens": [
+    {
+      "symbol": "USDT",
+      "quoteCurrency": "DAI",
+      "swapTokens": [
+        {
+          "symbol": "USDC",
+          "estimatedFee": "0.005",
+          "swapTime": "1000"
+        }
+      ],
+      "withdrawNetworks": [
+        {
+          "network": "BSC",
+          "minWithdrawAmount": "10",
+          "exchangeFee": "0.5",
+          "withdrawTime": "1000",
+          "destination": "ZKAP"
+        }
+      ],
+      "depositNetworks": [
+        {
+          "network": "Tron",
+          "minDepositAmount": "0.001",
+          "depositTime": "1000"
+        }
+      ]
+    },
+    {
+      "symbol": "USDC",
+      "quoteCurrency": "USDT",
+      "swapTokens": [],
+      "withdrawNetworks": [
+        {
+          "network": "Base",
+          "minWithdrawAmount": "10",
+          "exchangeFee": "0.5",
+          "withdrawTime": "1000",
+          "destination": "ZKAP"
+        }
+      ]
+    }
+  ]
+}

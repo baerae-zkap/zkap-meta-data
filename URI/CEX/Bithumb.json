@@ -1,0 +1,61 @@
+{
+  "name": "Bithumb",
+  "quoteCurrency": "KRW",
+  "marketFee": "0.04",
+  "firstWithdrawableTime": "0h",
+  "isWhiteList": true,
+  "isTravelRule": true,
+  "isLargeWithdraw": true,
+  "tokens": [
+    {
+      "symbol": "USDT",
+      "swapTokens": [],
+      "withdrawNetworks": [
+        {
+          "network": "Tron",
+          "minWithdrawAmount": "0.000001",
+          "exchangeFee": "0",
+          "withdrawTime": "1000",
+          "destination": "Binance"
+        }
+      ],
+      "depositNetworks": [
+        {
+          "network": "KRW",
+          "minDepositAmount": "5000",
+          "depositTime": "1000"
+        },
+        {
+          "network": "Tron",
+          "minDepositAmount": "0.001",
+          "depositTime": "1000"
+        }
+      ]
+    },
+    {
+      "symbol": "USDC",
+      "swapTokens": [],
+      "withdrawNetworks": [
+        {
+          "network": "Ethereum",
+          "minWithdrawAmount": "1",
+          "exchangeFee": "0",
+          "withdrawTime": "1000",
+          "destination": "ZKAP"
+        }
+      ],
+      "depositNetworks": [
+        {
+          "network": "KRW",
+          "minDepositAmount": "5000",
+          "depositTime": "1000"
+        },
+        {
+          "network": "Tron",
+          "minDepositAmount": "0.001",
+          "depositTime": "1000"
+        }
+      ]
+    }
+  ]
+}

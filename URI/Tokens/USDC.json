@@ -1,0 +1,8 @@
+{
+  "Name": "USD Coin",
+  "Symbol": "USDC",
+  "LogoURI": "https://cryptologos.cc/logos/usd-coin-usdc-logo.png",
+  "Networks": ["Ethereum", "Base", "Binance"],
+  "CEX": ["Korbit", "Binance", "Coinone"],
+  "Services": ["1inch"]
+}

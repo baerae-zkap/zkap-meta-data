@@ -1,0 +1,31 @@
+{
+  "name": "Coinone",
+  "quoteCurrency": "KRW",
+  "marketFee": "0.04",
+  "firstWithdrawableTime": "24h",
+  "isWhiteList": true,
+  "isTravelRule": true,
+  "isLargeWithdraw": false,
+  "tokens": [
+    {
+      "symbol": "USDT",
+      "swapTokens": [],
+      "withdrawNetworks": [
+        {
+          "network": "Tron",
+          "minWithdrawAmount": "1",
+          "exchangeFee": "0.00001",
+          "withdrawTime": "300",
+          "destination": "Binance"
+        }
+      ],
+      "depositNetworks": [
+        {
+          "network": "KRW",
+          "minDepositAmount": "5000",
+          "depositTime": "1000"
+        }
+      ]
+    }
+  ]
+}

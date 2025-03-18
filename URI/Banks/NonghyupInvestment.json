@@ -1,0 +1,34 @@
+{
+  "name": "Nonghyup Investment",
+  "supportedCurrencies": ["KRW"],
+  "withdrawNetworks": [
+    {
+      "network": "Fiat",
+      "fee": 0,
+      "time": 1,
+      "quoteCurrency": "KRW",
+      "destination": "Nonghyup"
+    },
+    {
+      "network": "Fiat",
+      "fee": 0,
+      "time": 1,
+      "quoteCurrency": "KRW",
+      "destination": "Shinhan"
+    },
+    {
+      "network": "Fiat",
+      "fee": 0,
+      "time": 1,
+      "quoteCurrency": "KRW",
+      "destination": "Kakao"
+    },
+    {
+      "network": "Fiat",
+      "fee": 0,
+      "time": 1,
+      "quoteCurrency": "KRW",
+      "destination": "Upbit"
+    }
+  ]
+}

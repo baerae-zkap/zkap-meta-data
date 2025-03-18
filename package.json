@@ -1,0 +1,12 @@
+{
+  "name": "zkap-meta-data",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/baerae-zkap/zkap-meta-data.git",
+  "author": "jjackban <ban@baerae.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.13.10"
+  }
+}
