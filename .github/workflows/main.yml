@@ -27,10 +27,10 @@ jobs:
       - name: Run merge script
         run: node merge.js
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Authenticate with GitHub
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+        run: echo "${{ secrets.ACCESS_TOKEN }}" | gh auth login --with-token
 
       - name: Commit and push changes
         run: |
