@@ -2,11 +2,11 @@ name: Merge JSON Files
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 매일 00:00에 실행
+    - cron: "0 0 * * *" # 매일 00:00에 실행
   push:
     branches:
-      - main  # main 브랜치에 머지될 때 실행
-  workflow_dispatch:  # 수동 실행 가능
+      - main # main 브랜치에 머지될 때 실행
+  workflow_dispatch: # 수동 실행 가능
 
 jobs:
   merge:
@@ -21,16 +21,13 @@ jobs:
         with:
           node-version: 18
 
-      - name: Enable Corepack
-        run: corepack enable
-
       - name: Install dependencies
         run: yarn install
 
       - name: Run merge script
-        run: yarn ts-node merge.ts
+        run: node merge.js
         env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Authenticate with GitHub
         run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
