@@ -12,7 +12,9 @@
   "CEX": {
     "Bithumb": "URI/CEX/Bithumb.json",
     "Binance": "URI/CEX/Binance.json",
-    "Korbit": "URI/CEX/Korbit.json"
+    "Korbit": "URI/CEX/Korbit.json",
+    "Coinone": "URI/CEX/Coinone.json",
+    "Upbit": "URI/CEX/Upbit.json"
   },
   "Wallets": {
     "ZKAP": "URI/Wallets/ZKAP.json"

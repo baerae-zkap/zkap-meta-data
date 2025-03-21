@@ -29,7 +29,7 @@ function buildGraph(indexFile: string, tokenPrice: number): Graph {
 
   // 1️⃣ 은행 정보 로드
   for (const bank in index.Banks) {
-    const bankData = loadJSON(index.Banks[bank]);
+    const bankData = index.Banks[bank];
     graph[bank] = [];
 
     bankData.withdrawNetworks.forEach((network: any) => {
@@ -46,7 +46,7 @@ function buildGraph(indexFile: string, tokenPrice: number): Graph {
 
   // 2️⃣ CEX 정보 로드 (토큰 구매 및 출금 포함 + 스왑 추가)
   for (const cex in index.CEX) {
-    const cexData = loadJSON(index.CEX[cex]);
+    const cexData = index.CEX[cex];
     graph[cex] = [];
 
     cexData.tokens.forEach((token: any) => {
@@ -88,7 +88,7 @@ function buildGraph(indexFile: string, tokenPrice: number): Graph {
 
   // 3️⃣ 월렛 정보 로드
   for (const wallet in index.Wallets) {
-    const walletData = loadJSON(index.Wallets[wallet]);
+    const walletData = index.Wallets[wallet];
     graph[wallet] = [];
 
     walletData.swapTokens.forEach((token: any) => {
@@ -110,5 +110,5 @@ function buildGraph(indexFile: string, tokenPrice: number): Graph {
 // const tokenSymbol = 'VIRTUAL';
 const tokenPrice = 1;
 // ✅ 실행 코드
-const graph = buildGraph("./URI/index.json", tokenPrice);
+const graph = buildGraph("./URI/merged.json", tokenPrice);
 console.log(graph);

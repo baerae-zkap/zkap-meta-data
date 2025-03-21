@@ -7,7 +7,6 @@
   "tokens": [
     {
       "symbol": "USDT",
-      "quoteCurrency": "DAI",
       "swapTokens": [
         {
           "symbol": "USDC",
@@ -34,7 +33,6 @@
     },
     {
       "symbol": "USDC",
-      "quoteCurrency": "USDT",
       "swapTokens": [],
       "withdrawNetworks": [
         {
