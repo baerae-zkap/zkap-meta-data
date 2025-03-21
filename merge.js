@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+const fs = require("fs");
+const path = require("path");
 
 const INDEX_FILE = "URI/index.json";
 const OUTPUT_FILE = "URI/merged.json";
@@ -7,7 +7,7 @@ const OUTPUT_FILE = "URI/merged.json";
 async function mergeJsonFiles() {
   try {
     const indexData = JSON.parse(fs.readFileSync(INDEX_FILE, "utf-8"));
-    let mergedData: Record<string, any> = {};
+    let mergedData = {};
 
     for (const category in indexData) {
       mergedData[category] = {};
