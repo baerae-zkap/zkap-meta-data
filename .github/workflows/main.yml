@@ -29,8 +29,8 @@ jobs:
 
       - name: Push changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "jjackban"
+          git config user.email "ban@baerae.com"
           git add .
-          git commit -m "Update via GitHub Actions"
+          git commit -m "feat: auto update CI via GitHub Actions"
           git push https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/baerae-zkap/zkap-meta-data.git HEAD:main
