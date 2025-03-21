@@ -26,16 +26,11 @@ jobs:
 
       - name: Run merge script
         run: node merge.js
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
-      - name: Authenticate with GitHub
-        run: echo "${{ secrets.ACCESS_TOKEN }}" | gh auth login --with-token
-
-      - name: Commit and push changes
+      - name: Push changes
         run: |
-          git config --global user.name "jjackban"
-          git config --global user.email "ban@baerae.com"
-          git add URI/merged.json
-          git commit -m "Auto-merge JSON files" || echo "No changes to commit"
-          git push
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Update via GitHub Actions"
+          git push https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/baerae-zkap/zkap-meta-data.git HEAD:main
