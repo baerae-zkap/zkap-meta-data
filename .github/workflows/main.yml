@@ -1,5 +1,8 @@
 name: Merge JSON Files
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 0 * * *" # 매일 00:00에 실행
@@ -27,10 +30,13 @@ jobs:
       - name: Run merge script
         run: node merge.js
 
-      - name: Push changes
+      - name: Commit and push changes if any
         run: |
           git config user.name "jjackban"
           git config user.email "ban@baerae.com"
           git add .
-          git commit -m "feat: auto update CI via GitHub Actions"
-          git push https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/baerae-zkap/zkap-meta-data.git HEAD:main
+          if git commit -m "feat: auto update CI via GitHub Actions"; then
+            git push https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/baerae-zkap/zkap-meta-data.git HEAD:main
+          else
+            echo "No changes to commit. Skipping push."
+          fi
