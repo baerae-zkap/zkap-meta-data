@@ -117,7 +117,6 @@
       "tokens": [
         {
           "symbol": "USDT",
-          "swapTokens": [],
           "withdrawNetworks": [
             {
               "network": "Tron",
@@ -176,13 +175,6 @@
       "tokens": [
         {
           "symbol": "USDT",
-          "swapTokens": [
-            {
-              "symbol": "USDC",
-              "estimatedFee": "0.005",
-              "swapTime": "1000"
-            }
-          ],
           "withdrawNetworks": [
             {
               "network": "BSC",
@@ -226,7 +218,6 @@
       "tokens": [
         {
           "symbol": "USDC",
-          "swapTokens": [],
           "withdrawNetworks": [
             {
               "network": "Base",
@@ -284,7 +275,6 @@
       "tokens": [
         {
           "symbol": "USDT",
-          "swapTokens": [],
           "withdrawNetworks": [
             {
               "network": "Tron",
@@ -316,7 +306,6 @@
       "tokens": [
         {
           "symbol": "USDC",
-          "swapTokens": [],
           "withdrawNetworks": [
             {
               "network": "Base",
