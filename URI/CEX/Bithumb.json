@@ -9,7 +9,6 @@
   "tokens": [
     {
       "symbol": "USDT",
-      "swapTokens": [],
       "withdrawNetworks": [
         {
           "network": "Tron",

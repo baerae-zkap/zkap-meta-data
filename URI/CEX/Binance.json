@@ -7,13 +7,6 @@
   "tokens": [
     {
       "symbol": "USDT",
-      "swapTokens": [
-        {
-          "symbol": "USDC",
-          "estimatedFee": "0.005",
-          "swapTime": "1000"
-        }
-      ],
       "withdrawNetworks": [
         {
           "network": "BSC",

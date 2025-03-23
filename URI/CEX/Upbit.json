@@ -10,7 +10,6 @@
   "tokens": [
     {
       "symbol": "USDC",
-      "swapTokens": [],
       "withdrawNetworks": [
         {
           "network": "Base",
