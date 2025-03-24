@@ -2,7 +2,9 @@
   "Banks": {
     "NonghyupInvestment": "URI/Banks/NonghyupInvestment.json",
     "Nonghyup": "URI/Banks/Nonghyup.json",
-    "Shinhan": "URI/Banks/Shinhan.json"
+    "Shinhan": "URI/Banks/Shinhan.json",
+    "Kakao": "URI/Banks/Kakao.json",
+    "Kbank": "URI/Banks/Kbank.json"
   },
   "Tokens": {
     "AAVE": "URI/Tokens/AAVE.json",
