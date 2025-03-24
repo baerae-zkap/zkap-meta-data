@@ -4,7 +4,8 @@
   "Symbol": "TON",
   "LogoURI": "https://cryptologos.cc/logos/toncoin-ton-logo.png",
   "Networks": ["TON"],
-  "CEX": ["Upbit", "Binance"],
+  "CEX": ["Bithumb", "Korbit", "Binance"],
   "Services": [],
+  "BridgeAssets": [],
   "Keywords": ["TON", "T", "Toncoin", "톤코인", "톤", "TON 코인"]
 }

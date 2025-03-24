@@ -5,9 +5,24 @@
     "Shinhan": "URI/Banks/Shinhan.json"
   },
   "Tokens": {
-    "VIRTUAL": "URI/Tokens/VIRTUAL.json",
+    "AAVE": "URI/Tokens/AAVE.json",
+    "AIXBT": "URI/Tokens/AIXBT.json",
+    "BNB": "URI/Tokens/BNB.json",
+    "BTC": "URI/Tokens/BTC.json",
+    "CBBTC": "URI/Tokens/CBBTC.json",
+    "COOKIE": "URI/Tokens/COOKIE.json",
+    "ETH": "URI/Tokens/ETH.json",
+    "KAIA": "URI/Tokens/KAIA.json",
+    "KAITO": "URI/Tokens/KAITO.json",
+    "PENDLE": "URI/Tokens/PENDLE.json",
+    "SOL": "URI/Tokens/SOL.json",
+    "SUI": "URI/Tokens/SUI.json",
+    "TON": "URI/Tokens/TON.json",
+    "USDC": "URI/Tokens/USDC.json",
     "USDT": "URI/Tokens/USDT.json",
-    "USDC": "URI/Tokens/USDC.json"
+    "VIRTUAL": "URI/Tokens/VIRTUAL.json",
+    "WETH": "URI/Tokens/WETH.json",
+    "XRP": "URI/Tokens/XRP.json"
   },
   "CEX": {
     "Bithumb": "URI/CEX/Bithumb.json",

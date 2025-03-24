@@ -6,5 +6,6 @@
   "Networks": ["Sui"],
   "CEX": ["Binance", "Upbit"],
   "Services": [],
+  "BridgeAssets": [],
   "Keywords": ["SUI", "S", "수이", "스이", "SUI 코인"]
 }

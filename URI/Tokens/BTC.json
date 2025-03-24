@@ -6,5 +6,6 @@
   "Networks": ["Bitcoin"],
   "CEX": ["Bithumb", "Upbit", "Binance", "Coinone"],
   "Services": [],
+  "BridgeAssets": [],
   "Keywords": ["Bitcoin", "BTC", "B", "비트코인", "비트", "비코", "BTC 코인"]
 }

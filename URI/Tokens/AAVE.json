@@ -3,6 +3,7 @@
   "NameKR": "에이브",
   "Symbol": "AAVE",
   "LogoURI": "https://cryptologos.cc/logos/aave-aave-logo.png",
+  "BridgeAssets": ["USDT", "USDC"],
   "Keywords": [
     "a",
     "aa",

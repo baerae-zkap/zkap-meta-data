@@ -4,8 +4,9 @@
   "Symbol": "VIRTUAL",
   "LogoURI": "https://zkap.app/images/stEth.png",
   "Network": ["Base"],
-  "CEX": ["Bithumb", "Binance", "Korbit"],
-  "Wallet": ["ZKAP"],
+  "CEX": [],
+  "Wallet": ["1inch"],
+  "BridgeAssets": ["USDT", "USDC"],
   "Keywords": [
     "Virtuals Protocol",
     "VIRTUAL",

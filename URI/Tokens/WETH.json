@@ -6,6 +6,7 @@
   "Networks": ["Base", "Ethereum"],
   "CEX": [],
   "Services": ["1inch"],
+  "BridgeAssets": ["USDT", "USDC"],
   "Keywords": [
     "Ethereum Wrapped",
     "WETH",

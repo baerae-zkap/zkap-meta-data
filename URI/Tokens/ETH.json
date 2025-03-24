@@ -5,6 +5,7 @@
   "LogoURI": "https://cryptologos.cc/logos/ethereum-eth-logo.png",
   "Networks": ["Ethereum"],
   "CEX": ["Bithumb", "Upbit", "Binance", "Coinone"],
-  "Services": ["1inch"],
+  "Services": [],
+  "BridgeAssets": [],
   "Keywords": ["Ethereum", "ETH", "E", "이더리움", "이더", "이", "ETH 코인"]
 }

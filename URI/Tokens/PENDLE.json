@@ -6,5 +6,6 @@
   "Networks": ["Base"],
   "CEX": [],
   "Services": ["1inch"],
+  "BridgeAssets": ["USDT", "USDC"],
   "Keywords": ["Pendle", "PENDLE", "P", "펜들", "팬들", "펜", "PENDLE 코인"]
 }

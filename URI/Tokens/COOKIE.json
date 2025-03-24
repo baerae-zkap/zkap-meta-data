@@ -6,6 +6,7 @@
   "Networks": ["Base"],
   "CEX": [],
   "Services": ["1inch"],
+  "BridgeAssets": ["USDT", "USDC"],
   "Keywords": [
     "Cookie DAO",
     "COOKIE",

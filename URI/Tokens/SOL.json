@@ -6,5 +6,6 @@
   "Networks": ["Solana"],
   "CEX": ["Bithumb", "Upbit", "Binance"],
   "Services": ["1inch"],
+  "BridgeAssets": [],
   "Keywords": ["Solana", "SOL", "S", "솔라나", "솔", "SOL 코인"]
 }
