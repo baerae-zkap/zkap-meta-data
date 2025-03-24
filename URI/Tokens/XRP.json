@@ -1,0 +1,8 @@
+{
+  "Name": "XRP",
+  "Symbol": "XRP",
+  "LogoURI": "https://cryptologos.cc/logos/xrp-xrp-logo.png",
+  "Networks": ["XRP Ledger"],
+  "CEX": ["Bithumb","Upbit","Binance","Coinone"],
+  "Services": []
+}

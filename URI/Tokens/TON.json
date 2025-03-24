@@ -1,0 +1,10 @@
+{
+  "Name": "TON",
+  "NameKR": "톤코인",
+  "Symbol": "TON",
+  "LogoURI": "https://cryptologos.cc/logos/toncoin-ton-logo.png",
+  "Networks": ["TON"],
+  "CEX": ["Upbit", "Binance"],
+  "Services": [],
+  "Keywords": ["TON", "T", "Toncoin", "톤코인", "톤", "TON 코인"]
+}

@@ -8,6 +8,44 @@
   "isLargeWithdraw": true,
   "tokens": [
     {
+      "symbol": "ETH",
+      "withdrawNetworks": [
+        {
+          "network": "Ethereum",
+          "minWithdrawAmount": "0.01",
+          "exchangeFee": "0.0005",
+          "withdrawTime": "1000",
+          "destination": "Binance"
+        }
+      ],
+      "depositNetworks": [
+        {
+          "network": "Ethereum",
+          "minDepositAmount": "0.01",
+          "depositTime": "1000"
+        }
+      ]
+    },
+    {
+      "symbol": "BTC",
+      "withdrawNetworks": [
+        {
+          "network": "Bitcoin",
+          "minWithdrawAmount": "0.00000002",
+          "exchangeFee": "0.0008",
+          "withdrawTime": "1000",
+          "destination": "Binance"
+        }
+      ],
+      "depositNetworks": [
+        {
+          "network": "Bitcoin",
+          "minDepositAmount": "0",
+          "depositTime": "1000"
+        }
+      ]
+    },
+    {
       "symbol": "USDT",
       "withdrawNetworks": [
         {
@@ -32,8 +70,64 @@
       ]
     },
     {
+      "symbol": "XRP",
+      "withdrawNetworks": [
+        {
+          "network": "Ripple",
+          "minWithdrawAmount": "20",
+          "exchangeFee": "0.1",
+          "withdrawTime": "1000",
+          "destination": "Binance"
+        }
+      ],
+      "depositNetworks": [
+        {
+          "network": "Ripple",
+          "minDepositAmount": "20",
+          "depositTime": "1000"
+        }
+      ]
+    },
+    {
+      "symbol": "SOL",
+      "withdrawNetworks": [
+        {
+          "network": "Solana",
+          "minWithdrawAmount": "0.01",
+          "exchangeFee": "0.0005",
+          "withdrawTime": "1000",
+          "destination": "Binance"
+        }
+      ],
+      "depositNetworks": [
+        {
+          "network": "Solana",
+          "minDepositAmount": "0.01",
+          "depositTime": "1000"
+        }
+      ]
+    },
+    {
+      "symbol": "BNB",
+      "withdrawNetworks": [
+        {
+          "network": "BSC",
+          "minWithdrawAmount": "0.01",
+          "exchangeFee": "0.0005",
+          "withdrawTime": "1000",
+          "destination": "Binance"
+        }
+      ],
+      "depositNetworks": [
+        {
+          "network": "BSC",
+          "minDepositAmount": "0.01",
+          "depositTime": "1000"
+        }
+      ]
+    },
+    {
       "symbol": "USDC",
-      "swapTokens": [],
       "withdrawNetworks": [
         {
           "network": "Ethereum",
@@ -52,6 +146,63 @@
         {
           "network": "Tron",
           "minDepositAmount": "0.001",
+          "depositTime": "1000"
+        }
+      ]
+    },
+    {
+      "symbol": "SUI",
+      "withdrawNetworks": [
+        {
+          "network": "Sui",
+          "minWithdrawAmount": "0.01",
+          "exchangeFee": "0.0005",
+          "withdrawTime": "1000",
+          "destination": "Binance"
+        }
+      ],
+      "depositNetworks": [
+        {
+          "network": "Sui",
+          "minDepositAmount": "0.01",
+          "depositTime": "1000"
+        }
+      ]
+    },
+    {
+      "symbol": "TON",
+      "withdrawNetworks": [
+        {
+          "network": "Ton",
+          "minWithdrawAmount": "0.01",
+          "exchangeFee": "0.0005",
+          "withdrawTime": "1000",
+          "destination": "Binance"
+        }
+      ],
+      "depositNetworks": [
+        {
+          "network": "Ton",
+          "minDepositAmount": "0.01",
+          "depositTime": "1000"
+        }
+      ]
+    },
+    {
+      "symbol": "KAIA",
+      "withdrawNetworks": [
+        {
+          "network": "Kaia",
+          "minWithdrawAmount": "0.01",
+          "exchangeFee": "0.0005",
+          "withdrawTime": "1000",
+          "destination": "Binance"
+        }
+      ],
+      "depositNetworks": [
+        {
+          "network": "Kaia",
+          "minDepositAmount": "0.01",
           "depositTime": "1000"
         }
       ]

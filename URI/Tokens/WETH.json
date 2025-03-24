@@ -1,0 +1,17 @@
+{
+  "Name": "Ethereum Wrapped",
+  "NameKR": "이더리움 랩드",
+  "Symbol": "WETH",
+  "LogoURI": "https://cryptologos.cc/logos/weth.png",
+  "Networks": ["Base", "Ethereum"],
+  "CEX": [],
+  "Services": ["1inch"],
+  "Keywords": [
+    "Ethereum Wrapped",
+    "WETH",
+    "W",
+    "이더리움 랩드",
+    "랩드 이더리움",
+    "WETH 코인"
+  ]
+}

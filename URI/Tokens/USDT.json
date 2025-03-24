@@ -1,8 +1,10 @@
 {
   "Name": "Tether",
+  "NameKR": "테더",
   "Symbol": "USDT",
   "LogoURI": "https://cryptologos.cc/logos/tether-usdt-logo.png",
   "Networks": ["Ethereum", "Tron"],
   "CEX": ["Bithumb", "Upbit", "Binance", "Coinone"],
-  "Services": ["1inch"]
+  "Services": ["1inch"],
+  "Keywords": ["Tether", "USDT", "U", "테더", "USDT 코인"]
 }

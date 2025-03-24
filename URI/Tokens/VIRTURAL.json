@@ -1,8 +1,20 @@
 {
   "Name": "Virtuals Protocol",
+  "NameKR": "버추얼 프로토콜",
   "Symbol": "VIRTUAL",
   "LogoURI": "https://zkap.app/images/stEth.png",
   "Network": ["Base"],
   "CEX": ["Bithumb", "Binance", "Korbit"],
-  "Wallet": ["ZKAP"]
+  "Wallet": ["ZKAP"],
+  "Keywords": [
+    "Virtuals Protocol",
+    "VIRTUAL",
+    "V",
+    "버",
+    "버추",
+    "버추얼",
+    "버츄",
+    "버츄얼",
+    "버츄얼 프로토콜"
+  ]
 }

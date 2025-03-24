@@ -1,0 +1,10 @@
+{
+  "Name": "BNB",
+  "NameKR": "바이낸스코인",
+  "Symbol": "BNB",
+  "LogoURI": "https://cryptologos.cc/logos/bnb-bnb-logo.png",
+  "Networks": ["BNB Chain"],
+  "CEX": ["Bithumb", "Upbit", "Binance"],
+  "Services": ["1inch"],
+  "Keywords": ["BNB", "B", "바이낸스", "바이낸스코인", "바", "바코", "BNB 코인"]
+}

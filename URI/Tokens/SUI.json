@@ -1,0 +1,10 @@
+{
+  "Name": "SUI",
+  "NameKR": "수이",
+  "Symbol": "SUI",
+  "LogoURI": "https://cryptologos.cc/logos/sui-sui-logo.png",
+  "Networks": ["Sui"],
+  "CEX": ["Binance", "Upbit"],
+  "Services": [],
+  "Keywords": ["SUI", "S", "수이", "스이", "SUI 코인"]
+}

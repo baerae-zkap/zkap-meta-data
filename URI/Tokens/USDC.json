@@ -1,8 +1,17 @@
 {
   "Name": "USD Coin",
+  "NameKR": "USD 코인",
   "Symbol": "USDC",
   "LogoURI": "https://cryptologos.cc/logos/usd-coin-usdc-logo.png",
   "Networks": ["Ethereum", "Base", "Binance"],
   "CEX": ["Korbit", "Binance", "Coinone"],
-  "Services": ["1inch"]
+  "Services": ["1inch"],
+  "Keywords": [
+    "USD Coin",
+    "USDC",
+    "U",
+    "USD 코인",
+    "유에스디 코인",
+    "USDC 코인"
+  ]
 }

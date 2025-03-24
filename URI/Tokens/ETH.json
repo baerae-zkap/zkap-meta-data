@@ -1,0 +1,10 @@
+{
+  "Name": "Ethereum",
+  "NameKR": "이더리움",
+  "Symbol": "ETH",
+  "LogoURI": "https://cryptologos.cc/logos/ethereum-eth-logo.png",
+  "Networks": ["Ethereum"],
+  "CEX": ["Bithumb", "Upbit", "Binance", "Coinone"],
+  "Services": ["1inch"],
+  "Keywords": ["Ethereum", "ETH", "E", "이더리움", "이더", "이", "ETH 코인"]
+}

@@ -1,0 +1,10 @@
+{
+  "Name": "Kaia",
+  "NameKR": "카이아",
+  "Symbol": "KAIA",
+  "LogoURI": "https://example.com/kaia-logo.png",
+  "Networks": ["Kaia"],
+  "CEX": [],
+  "Services": [],
+  "Keywords": ["Kaia", "KAIA", "K", "카이아", "카", "KAIA 코인"]
+}

@@ -1,0 +1,10 @@
+{
+  "Name": "KAITO",
+  "NameKR": "카이토",
+  "Symbol": "KAITO",
+  "LogoURI": "https://cryptologos.cc/logos/kaito-logo.png",
+  "Networks": ["Base"],
+  "CEX": [],
+  "Services": ["1inch"],
+  "Keywords": ["KAITO", "K", "Kai", "카이토", "카", "카이", "KAITO 코인"]
+}
