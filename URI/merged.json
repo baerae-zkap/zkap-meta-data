@@ -70,6 +70,7 @@
   "Tokens": {
     "USDT": {
       "Name": "Tether",
+      "NameKR": "테더",
       "Symbol": "USDT",
       "LogoURI": "https://cryptologos.cc/logos/tether-usdt-logo.png",
       "Networks": [
@@ -84,10 +85,18 @@
       ],
       "Services": [
         "1inch"
+      ],
+      "Keywords": [
+        "Tether",
+        "USDT",
+        "U",
+        "테더",
+        "USDT 코인"
       ]
     },
     "USDC": {
       "Name": "USD Coin",
+      "NameKR": "USD 코인",
       "Symbol": "USDC",
       "LogoURI": "https://cryptologos.cc/logos/usd-coin-usdc-logo.png",
       "Networks": [
@@ -102,6 +111,14 @@
       ],
       "Services": [
         "1inch"
+      ],
+      "Keywords": [
+        "USD Coin",
+        "USDC",
+        "U",
+        "USD 코인",
+        "유에스디 코인",
+        "USDC 코인"
       ]
     }
   },
@@ -115,6 +132,44 @@
       "isTravelRule": true,
       "isLargeWithdraw": true,
       "tokens": [
+        {
+          "symbol": "ETH",
+          "withdrawNetworks": [
+            {
+              "network": "Ethereum",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "1000",
+              "destination": "Binance"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Ethereum",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "BTC",
+          "withdrawNetworks": [
+            {
+              "network": "Bitcoin",
+              "minWithdrawAmount": "0.00000002",
+              "exchangeFee": "0.0008",
+              "withdrawTime": "1000",
+              "destination": "Binance"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Bitcoin",
+              "minDepositAmount": "0",
+              "depositTime": "1000"
+            }
+          ]
+        },
         {
           "symbol": "USDT",
           "withdrawNetworks": [
@@ -140,8 +195,64 @@
           ]
         },
         {
+          "symbol": "XRP",
+          "withdrawNetworks": [
+            {
+              "network": "Ripple",
+              "minWithdrawAmount": "20",
+              "exchangeFee": "0.1",
+              "withdrawTime": "1000",
+              "destination": "Binance"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Ripple",
+              "minDepositAmount": "20",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "SOL",
+          "withdrawNetworks": [
+            {
+              "network": "Solana",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "1000",
+              "destination": "Binance"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Solana",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "BNB",
+          "withdrawNetworks": [
+            {
+              "network": "BSC",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "1000",
+              "destination": "Binance"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "BSC",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
           "symbol": "USDC",
-          "swapTokens": [],
           "withdrawNetworks": [
             {
               "network": "Ethereum",
@@ -163,6 +274,63 @@
               "depositTime": "1000"
             }
           ]
+        },
+        {
+          "symbol": "SUI",
+          "withdrawNetworks": [
+            {
+              "network": "Sui",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "1000",
+              "destination": "Binance"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Sui",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "TON",
+          "withdrawNetworks": [
+            {
+              "network": "Ton",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "1000",
+              "destination": "Binance"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Ton",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "KAIA",
+          "withdrawNetworks": [
+            {
+              "network": "Kaia",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "1000",
+              "destination": "Binance"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Kaia",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
         }
       ]
     },
@@ -173,6 +341,44 @@
       "isWhiteList": false,
       "isLargeWithdraw": false,
       "tokens": [
+        {
+          "symbol": "ETH",
+          "withdrawNetworks": [
+            {
+              "network": "Ethereum",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "1000",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Ethereum",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "BTC",
+          "withdrawNetworks": [
+            {
+              "network": "Bitcoin",
+              "minWithdrawAmount": "0.001",
+              "exchangeFee": "0.00003",
+              "withdrawTime": "60",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Bitcoin",
+              "minDepositAmount": "0.00000002",
+              "depositTime": "1000"
+            }
+          ]
+        },
         {
           "symbol": "USDT",
           "withdrawNetworks": [
@@ -193,8 +399,64 @@
           ]
         },
         {
+          "symbol": "XRP",
+          "withdrawNetworks": [
+            {
+              "network": "Ripple",
+              "minWithdrawAmount": "20",
+              "exchangeFee": "0.1",
+              "withdrawTime": "1000",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Ripple",
+              "minDepositAmount": "20",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "SOL",
+          "withdrawNetworks": [
+            {
+              "network": "Solana",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "1000",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Solana",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "BNB",
+          "withdrawNetworks": [
+            {
+              "network": "BSC",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "1000",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "BSC",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
           "symbol": "USDC",
-          "swapTokens": [],
           "withdrawNetworks": [
             {
               "network": "Base",
@@ -202,6 +464,63 @@
               "exchangeFee": "0.5",
               "withdrawTime": "1000",
               "destination": "ZKAP"
+            }
+          ]
+        },
+        {
+          "symbol": "SUI",
+          "withdrawNetworks": [
+            {
+              "network": "Sui",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "1000",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Sui",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "TON",
+          "withdrawNetworks": [
+            {
+              "network": "Ton",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "1000",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Ton",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "KAIA",
+          "withdrawNetworks": [
+            {
+              "network": "Kaia",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "1000",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Kaia",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
             }
           ]
         }
@@ -237,7 +556,6 @@
         },
         {
           "symbol": "ETH",
-          "swapTokens": [],
           "withdrawNetworks": [
             {
               "network": "Ethereum",
@@ -261,6 +579,158 @@
               "depositTime": "1000"
             }
           ]
+        },
+        {
+          "symbol": "BTC",
+          "withdrawNetworks": [
+            {
+              "network": "Bitcoin",
+              "minWithdrawAmount": "0.001",
+              "exchangeFee": "0.0008",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Bitcoin",
+              "minDepositAmount": "0.001",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "USDT",
+          "withdrawNetworks": [
+            {
+              "network": "Tron",
+              "minWithdrawAmount": "1",
+              "exchangeFee": "0.00001",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "KRW",
+              "minDepositAmount": "5000",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "XRP",
+          "withdrawNetworks": [
+            {
+              "network": "Ripple",
+              "minWithdrawAmount": "20",
+              "exchangeFee": "0.1",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Ripple",
+              "minDepositAmount": "20",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "SOL",
+          "withdrawNetworks": [
+            {
+              "network": "Solana",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Solana",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "BNB",
+          "withdrawNetworks": [
+            {
+              "network": "BSC",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "BSC",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "SUI",
+          "withdrawNetworks": [
+            {
+              "network": "Sui",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Sui",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "TON",
+          "withdrawNetworks": [
+            {
+              "network": "Ton",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Ton",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "KAIA",
+          "withdrawNetworks": [
+            {
+              "network": "Kaia",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Kaia",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
         }
       ]
     },
@@ -273,6 +743,44 @@
       "isTravelRule": true,
       "isLargeWithdraw": false,
       "tokens": [
+        {
+          "symbol": "ETH",
+          "withdrawNetworks": [
+            {
+              "network": "Ethereum",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "300",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Ethereum",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "BTC",
+          "withdrawNetworks": [
+            {
+              "network": "Bitcoin",
+              "minWithdrawAmount": "0.001",
+              "exchangeFee": "0.0008",
+              "withdrawTime": "300",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Bitcoin",
+              "minDepositAmount": "0.001",
+              "depositTime": "1000"
+            }
+          ]
+        },
         {
           "symbol": "USDT",
           "withdrawNetworks": [
@@ -288,6 +796,132 @@
             {
               "network": "KRW",
               "minDepositAmount": "5000",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "XRP",
+          "withdrawNetworks": [
+            {
+              "network": "Ripple",
+              "minWithdrawAmount": "20",
+              "exchangeFee": "0.1",
+              "withdrawTime": "300",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Ripple",
+              "minDepositAmount": "20",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "SOL",
+          "withdrawNetworks": [
+            {
+              "network": "Solana",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "300",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Solana",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "BNB",
+          "withdrawNetworks": [
+            {
+              "network": "BSC",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "300",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "BSC",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "USDC",
+          "withdrawNetworks": [
+            {
+              "network": "Ethereum",
+              "minWithdrawAmount": "10",
+              "exchangeFee": "0.5",
+              "withdrawTime": "300",
+              "destination": "ZKAP"
+            }
+          ]
+        },
+        {
+          "symbol": "SUI",
+          "withdrawNetworks": [
+            {
+              "network": "Sui",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "300",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Sui",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "TON",
+          "withdrawNetworks": [
+            {
+              "network": "Ton",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "300",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Ton",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "KAIA",
+          "withdrawNetworks": [
+            {
+              "network": "Kaia",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "300",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Kaia",
+              "minDepositAmount": "0.01",
               "depositTime": "1000"
             }
           ]
@@ -322,6 +956,184 @@
               "depositTime": "1000"
             }
           ]
+        },
+        {
+          "symbol": "ETH",
+          "withdrawNetworks": [
+            {
+              "network": "Ethereum",
+              "minWithdrawAmount": "0.005",
+              "exchangeFee": "0.005",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            },
+            {
+              "network": "Base",
+              "minWithdrawAmount": "0.001",
+              "exchangeFee": "0.00001",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "KRW",
+              "minDepositAmount": "5000",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "BTC",
+          "withdrawNetworks": [
+            {
+              "network": "Bitcoin",
+              "minWithdrawAmount": "0.001",
+              "exchangeFee": "0.0008",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Bitcoin",
+              "minDepositAmount": "0.001",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "USDT",
+          "withdrawNetworks": [
+            {
+              "network": "Tron",
+              "minWithdrawAmount": "1",
+              "exchangeFee": "0.00001",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "KRW",
+              "minDepositAmount": "5000",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "XRP",
+          "withdrawNetworks": [
+            {
+              "network": "Ripple",
+              "minWithdrawAmount": "20",
+              "exchangeFee": "0.1",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Ripple",
+              "minDepositAmount": "20",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "SOL",
+          "withdrawNetworks": [
+            {
+              "network": "Solana",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Solana",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "BNB",
+          "withdrawNetworks": [
+            {
+              "network": "BSC",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "BSC",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "SUI",
+          "withdrawNetworks": [
+            {
+              "network": "Sui",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Sui",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "TON",
+          "withdrawNetworks": [
+            {
+              "network": "Ton",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Ton",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "KAIA",
+          "withdrawNetworks": [
+            {
+              "network": "Kaia",
+              "minWithdrawAmount": "0.01",
+              "exchangeFee": "0.0005",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Kaia",
+              "minDepositAmount": "0.01",
+              "depositTime": "1000"
+            }
+          ]
         }
       ]
     }
@@ -340,6 +1152,55 @@
           "to": "1inch",
           "network": "Base",
           "symbol": "VIRTUAL",
+          "fee": 0.3,
+          "time": 1000
+        },
+        {
+          "to": "1inch",
+          "network": "Base",
+          "symbol": "WETH",
+          "fee": 0.3,
+          "time": 1000
+        },
+        {
+          "to": "1inch",
+          "network": "Base",
+          "symbol": "AAVE",
+          "fee": 0.3,
+          "time": 1000
+        },
+        {
+          "to": "1inch",
+          "network": "Base",
+          "symbol": "CBBTC",
+          "fee": 0.3,
+          "time": 1000
+        },
+        {
+          "to": "1inch",
+          "network": "Base",
+          "symbol": "KAITO",
+          "fee": 0.3,
+          "time": 1000
+        },
+        {
+          "to": "1inch",
+          "network": "Base",
+          "symbol": "PENDLE",
+          "fee": 0.3,
+          "time": 1000
+        },
+        {
+          "to": "1inch",
+          "network": "Base",
+          "symbol": "COOKIE",
+          "fee": 0.3,
+          "time": 1000
+        },
+        {
+          "to": "1inch",
+          "network": "Base",
+          "symbol": "AIXBT",
           "fee": 0.3,
           "time": 1000
         }
