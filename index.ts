@@ -54,6 +54,24 @@ function buildGraph(
   for (const cex in index.CEX) {
     const cexData = index.CEX[cex];
     graph[cex] = [];
+    cexData.stableTokens.forEach((token: any) => {
+      if (token.symbol === tokenSymbol) {
+        token.withdrawNetworks.forEach((network: any) => {
+          if (network.network === tokenNetwork) {
+            const edge: Edge = {
+              step: "CEX",
+              from: cex,
+              to: network.destination,
+              cost: network.fee * tokenPrice,
+              time: network.time,
+              token: token.symbol,
+            };
+            graph[cex].push(edge);
+            isTokenExist = true;
+          }
+        });
+      }
+    });
     cexData.tokens.forEach((token: any) => {
       if (token.symbol === tokenSymbol) {
         token.withdrawNetworks.forEach((network: any) => {
