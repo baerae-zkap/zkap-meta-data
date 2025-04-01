@@ -7,7 +7,8 @@
       "fee": 0,
       "time": 1,
       "quoteCurrency": "KRW",
-      "destination": "Korbit"
+      "destination": "Korbit",
+      "destinationType": "CEX"
     }
   ]
 }

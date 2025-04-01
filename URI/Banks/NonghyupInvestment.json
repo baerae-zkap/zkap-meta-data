@@ -7,28 +7,32 @@
       "fee": 0,
       "time": 1,
       "quoteCurrency": "KRW",
-      "destination": "Nonghyup"
+      "destination": "Nonghyup",
+      "destinationType": "Bank"
     },
     {
       "network": "Fiat",
       "fee": 0,
       "time": 1,
       "quoteCurrency": "KRW",
-      "destination": "Shinhan"
+      "destination": "Shinhan",
+      "destinationType": "Bank"
     },
     {
       "network": "Fiat",
       "fee": 0,
       "time": 1,
       "quoteCurrency": "KRW",
-      "destination": "Kakao"
+      "destination": "Kakao",
+      "destinationType": "Bank"
     },
     {
       "network": "Fiat",
       "fee": 0,
       "time": 1,
       "quoteCurrency": "KRW",
-      "destination": "Kbank"
+      "destination": "Kbank",
+      "destinationType": "Bank"
     }
   ]
 }
