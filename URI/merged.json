@@ -836,15 +836,7 @@
       "stableTokens": [
         {
           "symbol": "USDT",
-          "withdrawNetworks": [
-            {
-              "network": "BSC",
-              "minWithdrawAmount": "10",
-              "exchangeFee": "0.5",
-              "withdrawTime": "1000",
-              "destination": "ZKAP"
-            }
-          ],
+          "withdrawNetworks": [],
           "depositNetworks": [
             {
               "network": "Tron",
@@ -869,15 +861,7 @@
       "tokens": [
         {
           "symbol": "USDT",
-          "withdrawNetworks": [
-            {
-              "network": "BSC",
-              "minWithdrawAmount": "10",
-              "exchangeFee": "0.5",
-              "withdrawTime": "1000",
-              "destination": "ZKAP"
-            }
-          ],
+          "withdrawNetworks": [],
           "depositNetworks": [
             {
               "network": "Tron",
