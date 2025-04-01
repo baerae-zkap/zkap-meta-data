@@ -11,28 +11,32 @@
           "fee": 0,
           "time": 1,
           "quoteCurrency": "KRW",
-          "destination": "Nonghyup"
+          "destination": "Nonghyup",
+          "destinationType": "Bank"
         },
         {
           "network": "Fiat",
           "fee": 0,
           "time": 1,
           "quoteCurrency": "KRW",
-          "destination": "Shinhan"
+          "destination": "Shinhan",
+          "destinationType": "Bank"
         },
         {
           "network": "Fiat",
           "fee": 0,
           "time": 1,
           "quoteCurrency": "KRW",
-          "destination": "Kakao"
+          "destination": "Kakao",
+          "destinationType": "Bank"
         },
         {
           "network": "Fiat",
           "fee": 0,
           "time": 1,
           "quoteCurrency": "KRW",
-          "destination": "Kbank"
+          "destination": "Kbank",
+          "destinationType": "Bank"
         }
       ]
     },
@@ -47,7 +51,8 @@
           "fee": 0,
           "time": 1,
           "quoteCurrency": "KRW",
-          "destination": "Bithumb"
+          "destination": "Bithumb",
+          "destinationType": "CEX"
         }
       ]
     },
@@ -62,7 +67,8 @@
           "fee": 0,
           "time": 1,
           "quoteCurrency": "KRW",
-          "destination": "Korbit"
+          "destination": "Korbit",
+          "destinationType": "CEX"
         }
       ]
     },
@@ -77,7 +83,8 @@
           "fee": 0,
           "time": 1,
           "quoteCurrency": "KRW",
-          "destination": "Coinone"
+          "destination": "Coinone",
+          "destinationType": "CEX"
         }
       ]
     },
@@ -92,7 +99,8 @@
           "fee": 0,
           "time": 1,
           "quoteCurrency": "KRW",
-          "destination": "Upbit"
+          "destination": "Upbit",
+          "destinationType": "CEX"
         }
       ]
     }
