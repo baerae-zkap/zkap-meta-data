@@ -626,6 +626,54 @@
       ],
       "tokens": [
         {
+          "symbol": "USDT",
+          "withdrawNetworks": [
+            {
+              "network": "Tron",
+              "minWithdrawAmount": "0.000001",
+              "exchangeFee": "0",
+              "withdrawTime": "1000",
+              "destination": "Binance"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "KRW",
+              "minDepositAmount": "5000",
+              "depositTime": "1000"
+            },
+            {
+              "network": "Tron",
+              "minDepositAmount": "0.001",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "USDC",
+          "withdrawNetworks": [
+            {
+              "network": "Ethereum",
+              "minWithdrawAmount": "1",
+              "exchangeFee": "0",
+              "withdrawTime": "1000",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "KRW",
+              "minDepositAmount": "5000",
+              "depositTime": "1000"
+            },
+            {
+              "network": "Tron",
+              "minDepositAmount": "0.001",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
           "symbol": "ETH",
           "withdrawNetworks": [
             {
@@ -819,6 +867,37 @@
         }
       ],
       "tokens": [
+        {
+          "symbol": "USDT",
+          "withdrawNetworks": [
+            {
+              "network": "BSC",
+              "minWithdrawAmount": "10",
+              "exchangeFee": "0.5",
+              "withdrawTime": "1000",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "Tron",
+              "minDepositAmount": "0.001",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "USDC",
+          "withdrawNetworks": [
+            {
+              "network": "Base",
+              "minWithdrawAmount": "10",
+              "exchangeFee": "0.5",
+              "withdrawTime": "1000",
+              "destination": "ZKAP"
+            }
+          ]
+        },
         {
           "symbol": "ETH",
           "withdrawNetworks": [
@@ -1023,6 +1102,44 @@
       ],
       "tokens": [
         {
+          "symbol": "USDT",
+          "withdrawNetworks": [
+            {
+              "network": "Tron",
+              "minWithdrawAmount": "1",
+              "exchangeFee": "0.00001",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "KRW",
+              "minDepositAmount": "5000",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "USDC",
+          "withdrawNetworks": [
+            {
+              "network": "Base",
+              "minWithdrawAmount": "1",
+              "exchangeFee": "0.00001",
+              "withdrawTime": "300",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "KRW",
+              "minDepositAmount": "5000",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
           "symbol": "ETH",
           "withdrawNetworks": [
             {
@@ -1225,6 +1342,37 @@
         }
       ],
       "tokens": [
+        {
+          "symbol": "USDT",
+          "withdrawNetworks": [
+            {
+              "network": "Tron",
+              "minWithdrawAmount": "1",
+              "exchangeFee": "0.00001",
+              "withdrawTime": "300",
+              "destination": "Binance"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "KRW",
+              "minDepositAmount": "5000",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "USDC",
+          "withdrawNetworks": [
+            {
+              "network": "Ethereum",
+              "minWithdrawAmount": "10",
+              "exchangeFee": "0.5",
+              "withdrawTime": "300",
+              "destination": "ZKAP"
+            }
+          ]
+        },
         {
           "symbol": "ETH",
           "withdrawNetworks": [
@@ -1429,6 +1577,44 @@
         }
       ],
       "tokens": [
+        {
+          "symbol": "USDT",
+          "withdrawNetworks": [
+            {
+              "network": "Tron",
+              "minWithdrawAmount": "1",
+              "exchangeFee": "0.00001",
+              "withdrawTime": "30",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "KRW",
+              "minDepositAmount": "5000",
+              "depositTime": "1000"
+            }
+          ]
+        },
+        {
+          "symbol": "USDC",
+          "withdrawNetworks": [
+            {
+              "network": "Base",
+              "minWithdrawAmount": "1",
+              "exchangeFee": "0.00001",
+              "withdrawTime": "300",
+              "destination": "ZKAP"
+            }
+          ],
+          "depositNetworks": [
+            {
+              "network": "KRW",
+              "minDepositAmount": "5000",
+              "depositTime": "1000"
+            }
+          ]
+        },
         {
           "symbol": "ETH",
           "withdrawNetworks": [
