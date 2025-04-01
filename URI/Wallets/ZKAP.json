@@ -1,7 +1,7 @@
 {
   "name": "ZKAP",
   "type": "Wallet",
-  "supportedNetworks": ["Ethereum", "Base", "BSC"],
+  "supportedNetworks": ["Base"],
   "swapTokens": [
     {
       "to": "1inch",

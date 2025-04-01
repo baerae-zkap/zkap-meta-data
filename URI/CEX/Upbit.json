@@ -16,7 +16,7 @@
           "minWithdrawAmount": "1",
           "exchangeFee": "0.00001",
           "withdrawTime": "30",
-          "destination": "ZKAP"
+          "destination": "Binance"
         }
       ],
       "depositNetworks": [
@@ -56,7 +56,7 @@
           "minWithdrawAmount": "1",
           "exchangeFee": "0.00001",
           "withdrawTime": "30",
-          "destination": "ZKAP"
+          "destination": "Binance"
         }
       ],
       "depositNetworks": [
