@@ -39,6 +39,37 @@
   ],
   "tokens": [
     {
+      "symbol": "USDT",
+      "withdrawNetworks": [
+        {
+          "network": "BSC",
+          "minWithdrawAmount": "10",
+          "exchangeFee": "0.5",
+          "withdrawTime": "1000",
+          "destination": "ZKAP"
+        }
+      ],
+      "depositNetworks": [
+        {
+          "network": "Tron",
+          "minDepositAmount": "0.001",
+          "depositTime": "1000"
+        }
+      ]
+    },
+    {
+      "symbol": "USDC",
+      "withdrawNetworks": [
+        {
+          "network": "Base",
+          "minWithdrawAmount": "10",
+          "exchangeFee": "0.5",
+          "withdrawTime": "1000",
+          "destination": "ZKAP"
+        }
+      ]
+    },
+    {
       "symbol": "ETH",
       "withdrawNetworks": [
         {

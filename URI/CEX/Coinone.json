@@ -41,6 +41,37 @@
   ],
   "tokens": [
     {
+      "symbol": "USDT",
+      "withdrawNetworks": [
+        {
+          "network": "Tron",
+          "minWithdrawAmount": "1",
+          "exchangeFee": "0.00001",
+          "withdrawTime": "300",
+          "destination": "Binance"
+        }
+      ],
+      "depositNetworks": [
+        {
+          "network": "KRW",
+          "minDepositAmount": "5000",
+          "depositTime": "1000"
+        }
+      ]
+    },
+    {
+      "symbol": "USDC",
+      "withdrawNetworks": [
+        {
+          "network": "Ethereum",
+          "minWithdrawAmount": "10",
+          "exchangeFee": "0.5",
+          "withdrawTime": "300",
+          "destination": "ZKAP"
+        }
+      ]
+    },
+    {
       "symbol": "ETH",
       "withdrawNetworks": [
         {
