@@ -1,6 +1,5 @@
 {
   "name": "Upbit",
-  "quoteCurrency": "KRW",
   "marketFee": "0.05",
   "firstWithdrawableTime": "72h",
   "secondWithdrawableTime": "24h",
@@ -10,6 +9,7 @@
   "stableTokens": [
     {
       "symbol": "USDT",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Tron",
@@ -29,6 +29,7 @@
     },
     {
       "symbol": "USDC",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Base",
@@ -50,6 +51,7 @@
   "tokens": [
     {
       "symbol": "USDT",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Tron",
@@ -69,6 +71,7 @@
     },
     {
       "symbol": "USDC",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Base",
@@ -88,6 +91,7 @@
     },
     {
       "symbol": "ETH",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Ethereum",
@@ -114,6 +118,7 @@
     },
     {
       "symbol": "BTC",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Bitcoin",
@@ -133,6 +138,7 @@
     },
     {
       "symbol": "XRP",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Ripple",
@@ -152,6 +158,7 @@
     },
     {
       "symbol": "SOL",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Solana",
@@ -171,6 +178,7 @@
     },
     {
       "symbol": "BNB",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "BSC",
@@ -190,6 +198,7 @@
     },
     {
       "symbol": "SUI",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Sui",
@@ -209,6 +218,7 @@
     },
     {
       "symbol": "TON",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Ton",
@@ -228,6 +238,7 @@
     },
     {
       "symbol": "KAIA",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Kaia",

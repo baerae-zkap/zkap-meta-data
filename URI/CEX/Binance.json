@@ -7,6 +7,7 @@
   "stableTokens": [
     {
       "symbol": "USDT",
+      "quoteCurrency": "DAI",
       "withdrawNetworks": [],
       "depositNetworks": [
         {
@@ -18,6 +19,7 @@
     },
     {
       "symbol": "USDC",
+      "quoteCurrency": "USDT",
       "withdrawNetworks": [
         {
           "network": "Base",
@@ -32,6 +34,7 @@
   "tokens": [
     {
       "symbol": "USDT",
+      "quoteCurrency": "DAI",
       "withdrawNetworks": [],
       "depositNetworks": [
         {
@@ -43,6 +46,7 @@
     },
     {
       "symbol": "USDC",
+      "quoteCurrency": "USDT",
       "withdrawNetworks": [
         {
           "network": "Base",
@@ -55,6 +59,7 @@
     },
     {
       "symbol": "ETH",
+      "quoteCurrency": "USDT",
       "withdrawNetworks": [
         {
           "network": "Ethereum",
@@ -74,6 +79,7 @@
     },
     {
       "symbol": "BTC",
+      "quoteCurrency": "USDT",
       "withdrawNetworks": [
         {
           "network": "Bitcoin",
@@ -93,6 +99,7 @@
     },
     {
       "symbol": "XRP",
+      "quoteCurrency": "USDT",
       "withdrawNetworks": [
         {
           "network": "Ripple",
@@ -112,6 +119,7 @@
     },
     {
       "symbol": "SOL",
+      "quoteCurrency": "USDT",
       "withdrawNetworks": [
         {
           "network": "Solana",
@@ -131,6 +139,7 @@
     },
     {
       "symbol": "BNB",
+      "quoteCurrency": "USDT",
       "withdrawNetworks": [
         {
           "network": "BSC",
@@ -150,6 +159,7 @@
     },
     {
       "symbol": "SUI",
+      "quoteCurrency": "USDT",
       "withdrawNetworks": [
         {
           "network": "Sui",
@@ -169,6 +179,7 @@
     },
     {
       "symbol": "TON",
+      "quoteCurrency": "USDT",
       "withdrawNetworks": [
         {
           "network": "Ton",
@@ -188,6 +199,7 @@
     },
     {
       "symbol": "KAIA",
+      "quoteCurrency": "USDT",
       "withdrawNetworks": [
         {
           "network": "Kaia",

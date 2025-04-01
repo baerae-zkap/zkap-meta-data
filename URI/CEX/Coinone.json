@@ -1,6 +1,5 @@
 {
   "name": "Coinone",
-  "quoteCurrency": "KRW",
   "marketFee": "0.04",
   "firstWithdrawableTime": "24h",
   "isWhiteList": true,
@@ -9,6 +8,7 @@
   "stableTokens": [
     {
       "symbol": "USDT",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Tron",
@@ -28,6 +28,7 @@
     },
     {
       "symbol": "USDC",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Ethereum",
@@ -42,6 +43,7 @@
   "tokens": [
     {
       "symbol": "USDT",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Tron",
@@ -61,6 +63,7 @@
     },
     {
       "symbol": "USDC",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Ethereum",
@@ -73,6 +76,7 @@
     },
     {
       "symbol": "ETH",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Ethereum",
@@ -92,6 +96,7 @@
     },
     {
       "symbol": "BTC",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Bitcoin",
@@ -111,6 +116,7 @@
     },
     {
       "symbol": "XRP",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Ripple",
@@ -130,6 +136,7 @@
     },
     {
       "symbol": "SOL",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Solana",
@@ -149,6 +156,7 @@
     },
     {
       "symbol": "BNB",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "BSC",
@@ -168,6 +176,7 @@
     },
     {
       "symbol": "SUI",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Sui",
@@ -187,6 +196,7 @@
     },
     {
       "symbol": "TON",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Ton",
@@ -206,6 +216,7 @@
     },
     {
       "symbol": "KAIA",
+      "quoteCurrency": "KRW",
       "withdrawNetworks": [
         {
           "network": "Kaia",
