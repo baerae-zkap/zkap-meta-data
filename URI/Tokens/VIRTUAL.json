@@ -3,8 +3,10 @@
   "NameKR": "버추얼 프로토콜",
   "Symbol": "VIRTUAL",
   "LogoURI": "https://zkap.app/images/stEth.png",
-  "Network": ["Base"],
+  "Networks": ["Base"],
   "CEX": [],
+  "Services": [],
+  "Tags": ["Stable"],
   "Wallet": ["1inch"],
   "BridgeAssets": ["USDT", "USDC"],
   "Keywords": [
