@@ -1,0 +1,249 @@
+{
+  "nodes": [
+    {
+      "id": "KRW/FIAT-Bithumb-USDT/TRON",
+      "service": "Bithumb",
+      "deposit": {
+        "currency": "KRW",
+        "network": "FIAT",
+        "time": 1000,
+        "fee": 0,
+        "min": 5000,
+        "max": 5000000,
+        "unit": "KRW"
+      },
+      "swap": {
+        "time": 1000,
+        "rate": 1,
+        "swapFeeBip": 4,
+        "swapFeeUnit": "USDT",
+        "transactionBipFee": 0,
+        "transactionFeeUnit": "NONE",
+        "serviceFeeBip": 0,
+        "serviceFeeUnit": "NONE"
+      },
+      "withdraw": {
+        "currency": "USDT",
+        "network": "TRON",
+        "time": 240000,
+        "fee": 0,
+        "min": 0.000001,
+        "max": 150000,
+        "unit": "USDT"
+      }
+    },
+    {
+      "id": "KRW/FIAT-Coinone-USDT/TRON",
+      "service": "Coinone",
+      "deposit": {
+        "currency": "KRW",
+        "network": "FIAT",
+        "time": 1000,
+        "fee": 0,
+        "min": 5000,
+        "max": 5000000,
+        "unit": "KRW"
+      },
+      "swap": {
+        "time": 1000,
+        "rate": 1,
+        "swapFeeBip": 20,
+        "swapFeeUnit": "USDT",
+        "transactionBipFee": 0,
+        "transactionFeeUnit": "NONE",
+        "serviceFeeBip": 0,
+        "serviceFeeUnit": "NONE"
+      },
+      "withdraw": {
+        "currency": "USDT",
+        "network": "TRON",
+        "time": 240000,
+        "fee": 0,
+        "min": 0.000001,
+        "max": 50000000,
+        "unit": "USDT"
+      }
+    },
+    {
+      "id": "KRW/FIAT-Upbit-USDT/TRON",
+      "service": "Upbit",
+      "deposit": {
+        "currency": "KRW",
+        "network": "FIAT",
+        "time": 1000,
+        "fee": 0,
+        "min": 5000,
+        "max": 5000000,
+        "unit": "KRW"
+      },
+      "swap": {
+        "time": 1000,
+        "rate": 1,
+        "swapFeeBip": 5,
+        "swapFeeUnit": "USDT",
+        "transactionBipFee": 0,
+        "transactionFeeUnit": "NONE",
+        "serviceFeeBip": 0,
+        "serviceFeeUnit": "NONE"
+      },
+      "withdraw": {
+        "currency": "USDT",
+        "network": "TRON",
+        "time": 240000,
+        "fee": 2,
+        "min": 1,
+        "max": 50000000,
+        "unit": "USDT"
+      }
+    },
+    {
+      "id": "KRW/FIAT-Korbit-USDT/TRON",
+      "service": "Korbit",
+      "deposit": {
+        "currency": "KRW",
+        "network": "FIAT",
+        "time": 1000,
+        "fee": 0,
+        "min": 5000,
+        "max": 5000000,
+        "unit": "KRW"
+      },
+      "swap": {
+        "time": 1000,
+        "rate": 1,
+        "swapFeeBip": 10,
+        "swapFeeUnit": "USDT",
+        "transactionBipFee": 0,
+        "transactionFeeUnit": "NONE",
+        "serviceFeeBip": 0,
+        "serviceFeeUnit": "NONE"
+      },
+      "withdraw": {
+        "currency": "USDT",
+        "network": "TRON",
+        "time": 240000,
+        "fee": 1,
+        "min": 1,
+        "max": 50000000,
+        "unit": "USDT"
+      }
+    },
+    {
+      "id": "KRW/FIAT-Korbit-USDC/BASE",
+      "service": "Korbit",
+      "deposit": {
+        "currency": "KRW",
+        "network": "FIAT",
+        "time": 1000,
+        "fee": 0,
+        "min": 5000,
+        "max": 5000000,
+        "unit": "KRW"
+      },
+      "swap": {
+        "time": 1000,
+        "rate": 1,
+        "swapFeeBip": 10,
+        "swapFeeUnit": "USDC",
+        "transactionBipFee": 0,
+        "transactionFeeUnit": "NONE",
+        "serviceFeeBip": 0,
+        "serviceFeeUnit": "NONE"
+      },
+      "withdraw": {
+        "currency": "USDC",
+        "network": "BASE",
+        "time": 240000,
+        "fee": 0.02,
+        "min": 0.1,
+        "max": 50000000,
+        "unit": "USDC"
+      }
+    },
+    {
+      "id": "USDT/TRON-Binance-USDC/BASE",
+      "service": "Binance",
+      "deposit": {
+        "currency": "USDT",
+        "network": "TRON",
+        "time": 60000,
+        "fee": 0,
+        "min": 0.01,
+        "max": 0,
+        "unit": "USDT"
+      },
+      "swap": {
+        "time": 1000,
+        "rate": 1,
+        "swapFeeBip": 1,
+        "swapFeeUnit": "USDC",
+        "transactionBipFee": 0,
+        "transactionFeeUnit": "NONE",
+        "serviceFeeBip": 0,
+        "serviceFeeUnit": "NONE"
+      },
+      "withdraw": {
+        "currency": "USDC",
+        "network": "BASE",
+        "time": 240000,
+        "fee": 0.22,
+        "min": 10,
+        "max": 0,
+        "unit": "USDC"
+      }
+    },
+    {
+      "id": "USDC/BASE-1inch-VIRTUAL/BASE",
+      "service": "1inch",
+      "deposit": {
+        "currency": "USDC",
+        "network": "BASE",
+        "time": 60000,
+        "fee": 0,
+        "min": 0,
+        "max": 0,
+        "unit": "USDC"
+      },
+      "swap": {
+        "time": 2000,
+        "rate": 1,
+        "swapFeeBip": 10,
+        "swapFeeUnit": "USDC",
+        "transactionBipFee": 4,
+        "transactionFeeUnit": "ETH",
+        "serviceFeeBip": 30,
+        "serviceFeeUnit": "USDC"
+      },
+      "withdraw": {
+        "currency": "VIRTUAL",
+        "network": "BASE",
+        "time": 240000,
+        "fee": 0,
+        "min": 0,
+        "max": 0,
+        "unit": "VIRTUAL"
+      }
+    }
+  ],
+  "index": {
+    "KRW": {
+      "FIAT": [
+        "KRW/FIAT-Bithumb-USDT/TRON",
+        "KRW/FIAT-Coinone-USDT/TRON",
+        "KRW/FIAT-Upbit-USDT/TRON",
+        "KRW/FIAT-Korbit-USDT/TRON",
+        "KRW/FIAT-Korbit-USDC/BASE"
+      ]
+    },
+    "USDT": {
+      "TRON": [
+        "USDT/TRON-Binance-USDC/BASE"
+      ]
+    },
+    "USDC": {
+      "BASE": [
+        "USDC/BASE-1inch-VIRTUAL/BASE"
+      ]
+    }
+  }
+}
