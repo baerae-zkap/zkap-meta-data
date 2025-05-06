@@ -1,11 +1,12 @@
 {
-  "Name": "Ethereum",
-  "NameKR": "이더리움",
-  "Symbol": "ETH",
-  "LogoURI": "https://cryptologos.cc/logos/ethereum-eth-logo.png",
-  "Networks": ["Ethereum"],
-  "CEX": ["Bithumb", "Upbit", "Binance", "Coinone"],
-  "Services": [],
-  "BridgeAssets": [],
-  "Keywords": ["Ethereum", "ETH", "E", "이더리움", "이더", "이", "ETH 코인"]
+  "symbol": "ETH",
+  "name": "Ethereum",
+  "logoURL": "https://zkap.app/logos/ETH.svg",
+  "networks": [
+    "Ethereum",
+    "Base"
+  ],
+  "tags": [
+    "Native"
+  ]
 }

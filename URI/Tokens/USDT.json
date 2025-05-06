@@ -1,11 +1,11 @@
 {
-  "Name": "Tether",
-  "NameKR": "테더",
-  "Symbol": "USDT",
-  "LogoURI": "https://cryptologos.cc/logos/tether-usdt-logo.png",
-  "Networks": ["Ethereum", "Tron"],
-  "CEX": ["Bithumb", "Upbit", "Binance", "Coinone", "Korbit"],
-  "Services": [],
-  "BridgeAssets": [],
-  "Keywords": ["Tether", "USDT", "U", "테더", "USDT 코인"]
+  "symbol": "USDT",
+  "name": "Tether",
+  "logoURL": "https://zkap.app/logos/USDT.svg",
+  "networks": [
+    "Tron:0xdac17f958d2ee523a2206206994597c13d831ec7"
+  ],
+  "tags": [
+    "Stable"
+  ]
 }

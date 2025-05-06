@@ -1,18 +1,11 @@
 {
-  "Name": "USD Coin",
-  "NameKR": "USD 코인",
-  "Symbol": "USDC",
-  "LogoURI": "https://cryptologos.cc/logos/usd-coin-usdc-logo.png",
-  "Networks": ["Ethereum", "Base", "Binance"],
-  "CEX": ["Korbit", "Binance", "Coinone", "Bithumb", "Upbit"],
-  "Services": [],
-  "BridgeAssets": [],
-  "Keywords": [
-    "USD Coin",
-    "USDC",
-    "U",
-    "USD 코인",
-    "유에스디 코인",
-    "USDC 코인"
+  "symbol": "USDC",
+  "name": "USD Coin",
+  "logoURL": "https://zkap.app/logos/USDC.svg",
+  "networks": [
+    "Base:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+  ],
+  "tags": [
+    "Stable"
   ]
 }
