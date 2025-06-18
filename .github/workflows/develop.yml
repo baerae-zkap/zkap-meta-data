@@ -76,7 +76,6 @@ jobs:
         with:
           payload: |
             {
-              "text": "✅ GitHub Action 알림: 개발서버에 토큰 업데이트가 완료되었습니다. 🎉\n📝 main 브랜치로 PR이 생성되었습니다.",
               "blocks": [
                 {
                   "type": "section",
