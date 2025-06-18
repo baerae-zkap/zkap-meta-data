@@ -75,8 +75,9 @@ jobs:
         uses: slackapi/slack-github-action@v1.24.0
         with:
           channel-id: "B0920CLDKPU"
-          slack-message: |
+          payload: |
             {
+              "text": "GitHub Action 알림",
               "blocks": [
                 {
                   "type": "header",
