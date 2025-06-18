@@ -5,18 +5,17 @@ permissions:
   pull-requests: write
 
 on:
-  push:
-    branches:
-      - develop # develop 브랜치에 머지될 때 실행
-  workflow_dispatch: # 수동 실행 가능
+  workflow_dispatch: # 수동 실행만 가능
 
 jobs:
-  merge:
+  token-update:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -34,11 +33,21 @@ jobs:
           git config user.name "jjackban"
           git config user.email "ban@baerae.com"
           git add .
-          if git commit -m "feat: auto update CI via GitHub Actions"; then
-            git push https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/baerae-zkap/zkap-meta-data.git HEAD:develop
-          else
+          if git diff --staged --quiet; then
             echo "No changes to commit. Skipping push."
+          else
+            git commit -m "feat: auto update CI via GitHub Actions"
+            git push origin HEAD:develop
           fi
+
+  pr-create:
+    runs-on: ubuntu-latest
+    needs: token-update
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Create Pull Request to main
         id: create-pr
@@ -52,8 +61,19 @@ jobs:
             ## 자동 업데이트
             GitHub Actions를 통해 자동으로 생성된 PR입니다.
 
+            ### 변경사항
+            - 토큰 데이터 자동 업데이트
+            - 생성 시간: $(date)
+
           delete-branch: false
           commit-message: "feat: auto update CI via GitHub Actions"
+
+  slack-notify:
+    runs-on: ubuntu-latest
+    needs: pr-create
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - name: Send message to Slack
         uses: slackapi/slack-github-action@v1.24.0
