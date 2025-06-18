@@ -74,9 +74,9 @@ jobs:
       - name: Send message to Slack
         uses: slackapi/slack-github-action@v1.24.0
         with:
-          payload: |
+          channel-id: "B0920CLDKPU"
+          slack-message: |
             {
-              "text": "GitHub Action 알림",
               "blocks": [
                 {
                   "type": "header",
