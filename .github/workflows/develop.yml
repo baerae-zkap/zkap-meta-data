@@ -76,7 +76,7 @@ jobs:
         with:
           payload: |
             {
-              "text": "",
+              "text": "GitHub Action 알림",
               "blocks": [
                 {
                   "type": "header",
