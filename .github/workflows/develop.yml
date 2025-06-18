@@ -2,10 +2,9 @@ name: Merge JSON Files
 
 permissions:
   contents: write
+  pull-requests: write
 
 on:
-  schedule:
-    - cron: "0 0 * * *" # 매일 00:00에 실행
   push:
     branches:
       - develop # develop 브랜치에 머지될 때 실행
@@ -40,3 +39,49 @@ jobs:
           else
             echo "No changes to commit. Skipping push."
           fi
+
+      - name: Create Pull Request to main
+        id: create-pr
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          base: main
+          branch: develop
+          title: "feat: auto update CI via GitHub Actions"
+          body: |
+            ## 자동 업데이트
+            GitHub Actions를 통해 자동으로 생성된 PR입니다.
+
+          delete-branch: false
+          commit-message: "feat: auto update CI via GitHub Actions"
+
+      - name: Send message to Slack
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          payload: |
+            {
+              "text": "✅ GitHub Action 알림: 개발서버에 토큰 업데이트가 완료되었습니다. 🎉\n📝 main 브랜치로 PR이 생성되었습니다.",
+              "attachments": [
+                {
+                  "blocks": [
+                    {
+                      "type": "actions",
+                      "elements": [
+                        {
+                          "type": "button",
+                          "text": {
+                            "type": "plain_text",
+                            "text": "메인 브랜치 PR 확인하기",
+                            "emoji": true
+                          },
+                          "style": "primary",
+                          "url": "https://github.com/baerae-zkap/zkap-meta-data/pulls"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

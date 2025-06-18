@@ -1,4 +1,3 @@
-import { coinNameI18n, CoinNameType } from "@baerae-zkap/common-registry";
 import fs from "fs";
 import { TOKEN_SHEET_ID, fetchAllSheets } from "./util";
 
