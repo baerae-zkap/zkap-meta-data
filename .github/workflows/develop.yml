@@ -49,24 +49,20 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
 
-      - name: Create Pull Request to main
-        id: create-pr
-        uses: peter-evans/create-pull-request@v5
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          base: main
-          branch: develop
-          title: "feat: auto update CI via GitHub Actions"
-          body: |
-            ## 자동 업데이트
-            GitHub Actions를 통해 자동으로 생성된 PR입니다.
+      - name: Create Pull Request using GitHub CLI
+        run: |
+          gh pr create \
+            --base main \
+            --head develop \
+            --title "feat: auto update CI via GitHub Actions" \
+            --body "## 자동 업데이트
+          GitHub Actions를 통해 자동으로 생성된 PR입니다.
 
-            ### 변경사항
-            - 토큰 데이터 자동 업데이트
-            - 생성 시간: $(date)
-
-          delete-branch: false
-          commit-message: "feat: auto update CI via GitHub Actions"
+          ### 변경사항
+          - 토큰 데이터 자동 업데이트
+          - 생성 시간: $(date)"
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
   slack-notify:
     runs-on: ubuntu-latest
