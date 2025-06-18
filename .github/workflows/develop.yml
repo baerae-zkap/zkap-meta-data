@@ -92,3 +92,5 @@ jobs:
                     emoji: true
                     style: "primary"
                     url: "https://github.com/baerae-zkap/zkap-meta-data/pulls"
+        env:
+          SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
