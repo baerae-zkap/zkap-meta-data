@@ -68,9 +68,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: pr-create
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
       - name: Send message to Slack
         uses: slackapi/slack-github-action@v2.1.0
         with:
@@ -80,9 +77,14 @@ jobs:
             text: "GitHub Action 알림"
             blocks: 
               - type: "header"
-                text: "GitHub Action 알림"
+                text:
+                  type: "plain_text"
+                  text: "GitHub Action 알림"
+                  emoji: true
               - type: "section"
-                text: "✅ GitHub Action 알림: 개발서버에 토큰 업데이트가 완료되었습니다. 🎉\n📝 main 브랜치로 PR이 생성되었습니다."
+                text:
+                  type: "mrkdwn"
+                  text: "✅ GitHub Action 알림: 개발서버에 토큰 업데이트가 완료되었습니다. 🎉\n📝 main 브랜치로 PR이 생성되었습니다."
               - type: "actions"
                 elements:
                   - type: "button"
