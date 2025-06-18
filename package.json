@@ -6,7 +6,6 @@
   "author": "jjackban <ban@baerae.com>",
   "license": "MIT",
   "dependencies": {
-    "@baerae-zkap/common-registry": "^0.0.33",
     "axios": "^1.8.4"
   },
   "devDependencies": {

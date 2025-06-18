@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@baerae-zkap/common-registry@^0.0.33":
-  version "0.0.33"
-  resolved "https://npm.pkg.github.com/download/@baerae-zkap/common-registry/0.0.33/1a0059120baf81442f5178aba1c50a26e7dba51c#1a0059120baf81442f5178aba1c50a26e7dba51c"
-  integrity sha512-lVD2TfcwJk/NmV5luaEbSKSTcR5W60GwpXEC9mlCBPRJkoQ2jN4VUV4GvnNsOOCDI1zLJYHs7/12+d119BX6HQ==
-
 "@cspotcode/source-map-support@^0.8.0":
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/@cspotcode/source-map-support/-/source-map-support-0.8.1.tgz#00629c35a688e05a88b1cda684fb9d5e73f000a1"
