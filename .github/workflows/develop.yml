@@ -76,8 +76,15 @@ jobs:
         with:
           payload: |
             {
-              "text": "GitHub Action 알림",
               "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "GitHub Action 알림",
+                    "emoji": true
+                  }
+                },
                 {
                   "type": "section",
                   "text": {
