@@ -5,9 +5,6 @@ permissions:
   pull-requests: write
 
 on:
-  push:
-    branches:
-      - develop
   workflow_dispatch: # 수동 실행만 가능
 
 jobs:

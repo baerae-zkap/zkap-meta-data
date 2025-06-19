@@ -2,7 +2,7 @@ import fs from "fs";
 import { TOKEN_SHEET_ID, fetchAllSheets } from "./util";
 
 // 가져올 시트 목록
-const SHEET_NAMES = ["Tokens"] as const;
+const SHEET_NAMES = ["Tokens", "Locale"] as const;
 
 type SheetName = (typeof SHEET_NAMES)[number];
 
@@ -12,6 +12,7 @@ const sheetData: Record<SheetName, any[]> = {} as Record<SheetName, any[]>;
 // 모든 시트 분석을 처리하는 함수
 async function sheetAnalyzers(): Promise<void> {
   const tokens = sheetData["Tokens"];
+  const locale = sheetData["Locale"];
   if (!tokens || tokens.length === 0) {
     console.error("토큰 데이터가 없습니다.");
     return;
@@ -24,7 +25,6 @@ async function sheetAnalyzers(): Promise<void> {
   }
 
   // 모든 토큰의 키워드 정보를 저장할 객체
-  const allKeywordsData: Record<string, string[]> = {};
   const allTokensData: Record<string, any> = {};
 
   // 각 토큰 데이터 처리
@@ -42,6 +42,10 @@ async function sheetAnalyzers(): Promise<void> {
         token["Exchanges"]?.split(",").map((t: string) => t.trim()) || [],
       keywords:
         token["Keywords"]?.split(",").map((k: string) => k.trim()) || [],
+      locale: {
+        ko: locale.find((l: any) => l.Symbol === symbol)?.KO || "",
+        en: locale.find((l: any) => l.Symbol === symbol)?.EN || "",
+      },
     };
 
     // allTokensData에 토큰 데이터 추가
