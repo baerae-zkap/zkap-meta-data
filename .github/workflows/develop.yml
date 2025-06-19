@@ -11,65 +11,65 @@ on:
   workflow_dispatch: # 수동 실행만 가능
 
 jobs:
-  # token-update:
-  #   runs-on: ubuntu-latest
+  token-update:
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #     - name: Checkout repository
-  #       uses: actions/checkout@v3
-  #       with:
-  #         token: ${{ secrets.ACCESS_TOKEN }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
 
-  #     - name: Set up Node.js
-  #       uses: actions/setup-node@v3
-  #       with:
-  #         node-version: 18
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
-  #     - name: Install dependencies
-  #       run: yarn install
+      - name: Install dependencies
+        run: yarn install
 
-  #     - name: Run merge script
-  #       run: yarn token
+      - name: Run merge script
+        run: yarn token
 
-  #     - name: Commit and push changes if any
-  #       run: |
-  #         git config user.name "jjackban"
-  #         git config user.email "ban@baerae.com"
-  #         git add .
-  #         if git diff --staged --quiet; then
-  #           echo "No changes to commit. Skipping push."
-  #         else
-  #           git commit -m "feat: auto update CI via GitHub Actions"
-  #           git push origin HEAD:develop
-  #         fi
+      - name: Commit and push changes if any
+        run: |
+          git config user.name "jjackban"
+          git config user.email "ban@baerae.com"
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes to commit. Skipping push."
+          else
+            git commit -m "feat: auto update CI via GitHub Actions"
+            git push origin HEAD:develop
+          fi
 
-  # pr-create:
-  #   runs-on: ubuntu-latest
-  #   needs: token-update
-  #   steps:
-  #     - name: Checkout repository
-  #       uses: actions/checkout@v3
-  #       with:
-  #         token: ${{ secrets.ACCESS_TOKEN }}
+  pr-create:
+    runs-on: ubuntu-latest
+    needs: token-update
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
 
-  #     - name: Create Pull Request using GitHub CLI
-  #       run: |
-  #         gh pr create \
-  #           --base main \
-  #           --head develop \
-  #           --title "feat: auto update CI via GitHub Actions" \
-  #           --body "## 자동 업데이트
-  #         GitHub Actions를 통해 자동으로 생성된 PR입니다.
+      - name: Create Pull Request using GitHub CLI
+        run: |
+          gh pr create \
+            --base main \
+            --head develop \
+            --title "feat: auto update CI via GitHub Actions" \
+            --body "## 자동 업데이트
+          GitHub Actions를 통해 자동으로 생성된 PR입니다.
 
-  #         ### 변경사항
-  #         - 토큰 데이터 자동 업데이트
-  #         - 생성 시간: $(date)"
-  #       env:
-  #         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ### 변경사항
+          - 토큰 데이터 자동 업데이트
+          - 생성 시간: $(date)"
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
   slack-notify:
     runs-on: ubuntu-latest
-    # needs: pr-create
+    needs: pr-create
     steps:
       - name: Greet the reader
         uses: slackapi/slack-github-action@v2.1.0
@@ -82,7 +82,7 @@ jobs:
               - type: "section"
                 text:
                   type: "mrkdwn"
-                  text: "✅ GitHub Action 알림: 개발서버에 토큰 업데이트가 완료되었습니다. \n📝 main 브랜치로 PR이 생성되었습니다."
+                  text: "✅ GitHub Action 알림: 개발서버에 토큰 업데이트가 완료되었습니다. \n📝 운영서버로 PR이 생성되었습니다."
                 accessory:
                   type: "button"
                   text:
