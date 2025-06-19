@@ -64,9 +64,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
-  slack-notify:
+  slack-notify-success:
     runs-on: ubuntu-latest
     needs: pr-create
+    if: success()
     steps:
       - name: Greet the reader
         uses: slackapi/slack-github-action@v2.1.0
@@ -89,3 +90,29 @@ jobs:
                   value: "actions"
                   url: "https://github.com/baerae-zkap/zkap-meta-data/pulls"
                   action_id: "pr_check"
+
+  slack-notify-failure:
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
+      - name: Notify failure
+        uses: slackapi/slack-github-action@v2.1.0
+        with:
+          webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook-type: incoming-webhook
+          payload: |
+            text: "Metadata Repository GitHub Action 실패 알림"
+            blocks:
+              - type: "section"
+                text:
+                  type: "mrkdwn"
+                  text: "❌ GitHub Action 실패: 토큰 업데이트 과정에서 오류가 발생했습니다. \n🔍 워크플로우를 확인해주세요."
+                accessory:
+                  type: "button"
+                  text:
+                    type: "plain_text"
+                    text: "워크플로우 확인하기"
+                    emoji: true
+                  value: "actions"
+                  url: "https://github.com/baerae-zkap/zkap-meta-data/actions"
+                  action_id: "workflow_check"
