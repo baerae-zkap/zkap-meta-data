@@ -83,9 +83,12 @@ jobs:
                 text:
                   type: "mrkdwn"
                   text: "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
-              - type: "actions"
-                elements:
-                  - type: "button"
+              - accessory:
+                  type: "button"
+                  text:
+                    type: "plain_text"
                     text: "메인 브랜치 PR 확인하기"
-                    url: "https://github.com/baerae-zkap/zkap-meta-data/pulls"
-                    style: "primary"
+                    emoji: true
+                  value: "actions"
+                  url: "https://github.com/baerae-zkap/zkap-meta-data/pulls"
+                  action_id: "pr_check"
