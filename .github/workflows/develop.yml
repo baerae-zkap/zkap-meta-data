@@ -37,6 +37,7 @@ jobs:
             echo "No changes to commit. Skipping push."
           else
             git commit -m "feat: auto update CI via GitHub Actions"
+            git pull origin develop
             git push origin HEAD:develop
           fi
 
